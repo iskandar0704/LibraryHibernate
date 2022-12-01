@@ -1,0 +1,39 @@
+### get studentBook list
+GET localhost:8080/studentBook/
+
+
+
+### add studentBook
+POST localhost:8080/studentBook/
+Content-Type: application/json
+
+{
+  "student_id" : "1",
+  "book_id" : "1",
+  "createdDate" : "2022",
+  "status" : "1111",
+  "returnedDate": "2023",
+  "duration" : "1"
+}
+
+
+### get by id
+GET localhost:8080/studentBook/1
+
+
+### delete
+DELETE localhost:8080/studentBook/2
+
+
+### update
+PUT localhost:8080/studentBook/1
+Content-Type: application/json
+
+{
+  "student_id" : "2",
+  "book_id" : "1",
+  "createdDate" : "2022",
+  "status" : "1111",
+  "returnedDate": "2023",
+  "duration" : "1"
+}

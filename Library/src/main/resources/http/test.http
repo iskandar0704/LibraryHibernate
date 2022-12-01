@@ -1,0 +1,36 @@
+### get book list
+GET localhost:8080/book/
+
+
+
+### add book
+POST localhost:8080/book/
+Content-Type: application/json
+
+{
+  "title" : "New",
+  "author" : "Newer",
+  "publishYear" : "2022"
+}
+
+
+### get by id
+GET localhost:8080/book/1
+
+
+### delete
+DELETE localhost:8080/book/2
+
+
+### update
+PUT localhost:8080/book/1
+Content-Type: application/json
+
+{
+  "title" : "Old",
+  "author" : "Older",
+  "publishYear" : "2021"
+}
+
+
+
